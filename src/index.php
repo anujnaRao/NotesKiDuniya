@@ -34,7 +34,7 @@
                             <a class="nav-link" href="view.php">View</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../home/regform/Login_v15/vendor/index.html">Login</a>
+                            <a class="nav-link" href="../home/regform/Login_v15/vendor/login.php">Login</a>
                         </li>
 
                     </ul>
@@ -64,7 +64,7 @@
                         <p></p>
                         <p></p>
                         <p></p>
-                        <div><a href="../home/regform/index.html" class="btn btn-primary btn-md">SignUp!</a></div>
+                        <div><a href="../home/regform/register.php" class="btn btn-primary btn-md">SignUp!</a></div>
                     </div>
                 </div>
 

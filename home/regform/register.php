@@ -1,4 +1,6 @@
-
+<?php
+ include("../../src/include/db.php");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -108,7 +110,7 @@
                         </div>
 
                         <div>
-                            <a href="Login_v15/vendor/index.html"><button class="btn btn--radius-2 btn--red" type="submit">Register</button></a>
+                            <a href="Login_v15/vendor/login.php"><button class="btn btn--radius-2 btn--red" type="submit">Register</button></a>
                         </div>
                     </form>
                 </div>
