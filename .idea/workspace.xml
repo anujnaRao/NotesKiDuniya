@@ -8,11 +8,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
-  </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -55,7 +50,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/regform/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
+            <state relative-caret-position="530">
               <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
             </state>
           </provider>
@@ -63,26 +58,38 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/regform/Login_v15/vendor/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/include/header.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/include/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/include/footer.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="68">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+=======
 <<<<<<< HEAD
             <state relative-caret-position="309">
               <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
@@ -93,6 +100,7 @@
               <folding>
                 <element signature="e#130#136#0#HTML" expanded="true" />
               </folding>
+>>>>>>> 5136cc9007cdf48dc9b0ba71bb287696992719fe
             </state>
           </provider>
         </entry>
@@ -127,8 +135,9 @@
         <option value="$PROJECT_DIR$/home/homepage.html" />
         <option value="$PROJECT_DIR$/home/regform/index.html" />
         <option value="$PROJECT_DIR$/src/include/headrer.php" />
-        <option value="$PROJECT_DIR$/src/index.php" />
         <option value="$PROJECT_DIR$/src/include/footer.php" />
+        <option value="$PROJECT_DIR$/src/index.php" />
+        <option value="$PROJECT_DIR$/src/include/header.php" />
       </list>
     </option>
   </component>
@@ -170,6 +179,8 @@
             <path>
               <item name="NotesKiDuniya" type="b2602c69:ProjectViewProjectNode" />
               <item name="NotesKiDuniya" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
               <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="regform" type="462c0819:PsiDirectoryNode" />
               <item name="Login_v15" type="462c0819:PsiDirectoryNode" />
@@ -182,6 +193,7 @@
               <item name="regform" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
 =======
+>>>>>>> 5136cc9007cdf48dc9b0ba71bb287696992719fe
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -253,14 +265,21 @@
       <workItem from="1558243523510" duration="1208000" />
 <<<<<<< Updated upstream
       <workItem from="1558244985452" duration="825000" />
+<<<<<<< HEAD
+      <workItem from="1558246095748" duration="800000" />
+=======
 >>>>>>> 9a7d085d97eda8b5ef625d7123fd6c0e2a1e1ca2
 =======
       <workItem from="1558244985452" duration="1086000" />
 >>>>>>> Stashed changes
+>>>>>>> 5136cc9007cdf48dc9b0ba71bb287696992719fe
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="14508000" />
+=======
 <<<<<<< Updated upstream
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="13997000" />
@@ -272,13 +291,14 @@
 =======
     <option name="totallyTimeSpent" value="13969000" />
 >>>>>>> Stashed changes
+>>>>>>> 5136cc9007cdf48dc9b0ba71bb287696992719fe
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
 >>>>>>> 9a7d085d97eda8b5ef625d7123fd6c0e2a1e1ca2
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18051359" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18305598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -346,13 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/registration/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/magnific-popup.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="553">
@@ -393,19 +406,13 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="236.5" y="222.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="237.0" y="222.0" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/regform/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -419,31 +426,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/include/header.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/include/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stated/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="69" column="12" lean-forward="true" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home/regform/Login_v15/vendor/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="530">
+=======
 <<<<<<< HEAD
         <state relative-caret-position="309">
           <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
 =======
         <state relative-caret-position="469">
+>>>>>>> 5136cc9007cdf48dc9b0ba71bb287696992719fe
           <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/include/footer.php">
+    <entry file="file://$PROJECT_DIR$/home/regform/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="530">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+=======
         <state relative-caret-position="60">
           <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
 >>>>>>> 9a7d085d97eda8b5ef625d7123fd6c0e2a1e1ca2
           <folding>
             <element signature="e#130#136#0#HTML" expanded="true" />
           </folding>
+>>>>>>> 5136cc9007cdf48dc9b0ba71bb287696992719fe
         </state>
       </provider>
     </entry>

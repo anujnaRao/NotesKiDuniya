@@ -12,9 +12,12 @@
 
                     <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                         <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="#" >View</li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="../Login_v15/index.html">Login</a></li>
+
+                        <li><a href="../home/regform/Login_v15/vendor/index.html">Login</a></li>
+
                     </ul>
                 </nav>
             </div>
