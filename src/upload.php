@@ -75,12 +75,36 @@
     </div>
 </nav>
 
-<form action="" method="post" enctype="multipart/form-data">
-    <label>Document name</label>
-    <input type="text" name="doc_name">
-    <input type="file" name="myfile">
-    <input type="submit" name="submit" value="Upload">
-</form>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-signin my-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center"><u>Notes Ki Duniya</h5></u>
+                    <h3 class="login-heading mb-4">Upload File</h3>
+                    <form action="" method="post" class="form-control" enctype="multipart/form-data">
+                        <div class="form-label-group">
+                        <input type="text" id="subname" name="subname" class="form-control" placeholder="Subject Name" required autofocus>
+                        <!--                        <label for="subname">Subject Name</label>-->
+                    </div>
+                    <hr>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupFile">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                   aria-describedby="inputGroupFile">
+                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                    </div><hr>
+                    <button type="submit" name="submit" class="btn btn-md btn-primary btn-block text-uppercase"  >Upload</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
