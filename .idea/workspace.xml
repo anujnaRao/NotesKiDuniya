@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2942933e-7015-43f2-a049-38bb8331005c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/include/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/include/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/regform/Login_v15/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/regform/Login_v15/vendor/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/regform/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/regform/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stated/js/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/stated/js/slick.min.js" afterDir="false" />
-    </list>
+    <list default="true" id="2942933e-7015-43f2-a049-38bb8331005c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,12 +251,17 @@
       <workItem from="1558243523510" duration="2322000" />
 =======
       <workItem from="1558243523510" duration="1208000" />
+<<<<<<< Updated upstream
       <workItem from="1558244985452" duration="825000" />
 >>>>>>> 9a7d085d97eda8b5ef625d7123fd6c0e2a1e1ca2
+=======
+      <workItem from="1558244985452" duration="1086000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="13997000" />
   </component>
@@ -274,6 +269,9 @@
     <frame x="-7" y="-7" width="1550" height="846" extended-state="6" />
 =======
     <option name="totallyTimeSpent" value="13708000" />
+=======
+    <option name="totallyTimeSpent" value="13969000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
