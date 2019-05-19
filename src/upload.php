@@ -1,6 +1,19 @@
 <?php
     session_start();
     include("./include/db.php");
+
+    if(isset($_POST['submit'])){
+        $doc_name = $_POST['doc_name'];
+        $file_name = $_FILES['myfile']['name'];
+        $file_type = $_FILES['myfile']['type'];
+        $file_size = $_FILES['myfile']['size'];
+        $file_tmp_loc = $_FILES['myfile']['tmp_name'];
+
+        $file_store ="/home/aditya/Desktop/".$file_name;
+        move_uploaded_file($file_tmp_loc,$file_store);
+
+
+    }
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +28,8 @@
     <script src="./bootstrap.js"></script>
     <script src="./popper.min.js"></script>
     <script src="./tooltip.min.js"></script>
-    <title>View</title>
+<!--    <script src=""></script>-->
+    <title>Notes | Upload</title>
 
 </head>
 <body>
@@ -61,38 +75,24 @@
     </div>
 </nav>
 
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-            <div class="card card-signin my-5">
-                <div class="card-body">
-                    <h5 class="card-title text-center"><u>Notes Ki Duniya</h5></u>
-                    <h3 class="login-heading mb-4">Upload File</h3>
-                    <div class="form-label-group">
-                        <input type="text" id="subname" name="subname" class="form-control" placeholder="Subject Name" required autofocus>
-<!--                        <label for="subname">Subject Name</label>-->
-                    </div>
-                    <hr>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupFile">Upload</span>
-                        </div>
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                   aria-describedby="inputGroupFile">
-                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                        </div>
-                    </div><hr>
-                    <button type="submit" name="submit" class="btn btn-md btn-primary btn-block text-uppercase"  >Upload</button>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<form action="" method="post" enctype="multipart/form-data">
+    <label>Document name</label>
+    <input type="text" name="doc_name">
+    <input type="file" name="myfile">
+    <input type="submit" name="submit" value="Upload">
 </form>
+
+
+
+<script>
+    // Add the following code if you want the name of the file appear on select
+    $(".custom-file-input").on("change", function() {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+</script>
+
 </body>
 </html>
+
 
