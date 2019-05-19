@@ -57,29 +57,23 @@
         <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
             <div class="card card-signin my-5">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Sign In</h5>
-                    <h3 class="login-heading mb-4">Welcome back!</h3>
-                    <form action="" method="post">
-                        <div class="form-label-group">
-                            <input type="email" id="inputEmail" name="mail" class="form-control" placeholder="Email address" required autofocus>
-                            <label for="inputEmail">Email address</label>
+                    <h5 class="card-title text-center">Notes Ki Duniya</h5>
+                    <h3 class="login-heading mb-4">Upload File</h3>
+                    <div class="form-label-group">
+                        <input type="text" id="subname" name="subname" class="form-control" placeholder="Subject Name" required autofocus>
+<!--                        <label for="subname">Subject Name</label>-->
+                    </div>
+                    <hr>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupFile">Upload</span>
                         </div>
-
-                        <div class="form-label-group">
-                            <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
-                            <label for="inputPassword">Password</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                   aria-describedby="inputGroupFile">
+                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                         </div>
-
-                        <div class="custom-control custom-checkbox mb-3">
-                            <input type="checkbox" name="rememberpass" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1">Remember password</label>
-                        </div>
-                        <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit" name="submit">Sign in</button>
-                        <div class="text-center">
-                            <a class="small" href="#">Forgot password?</a></div>
-                        <div class="text-center">
-                            Don't have account? <a class="small" href="signup.php">Register</a></div>
-                    </form>
+                    </div>
 
                 </div>
             </div>
