@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include("../../../../src/include/db.php");
 ?>
 
@@ -51,22 +52,42 @@
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="pass" placeholder="Enter password">
+						<input class="input100" type="password" name="password" placeholder="Enter password">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" type="submit" name="submit">
 							Login
-						</button></a>
+						</button>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+
+    <?php
+        if(isset($_POST['submit'])){
+            $mail = $_POST['mail'];
+            $password = $_POST['password'];
+
+            $query = "SELECT * FROM users where uid='$mail' and pwd= '$password' ";
+
+            $userData = mysqli_query($con,$query);
+            $totalrow = mysqli_num_rows($userData); // return the count of row
+            if($totalrow == 1){
+                $_SESSION['user_mail']=$mail;
+                header('location: ../../../../src/user.php');
+            }else{
+                $msg = "Incorrect Email or password ";
+                echo "<script type='text/javascript'> alert('$msg');</script>";
+            }
+        }
+    ?>
 	
 <!--===============================================================================================-->
 	<script src="jquery/jquery-3.2.1.min.js"></script>
+<!--    <script src="../../../../src/user.php"></script>-->
 <!--===============================================================================================-->
 	<script src="animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
@@ -81,24 +102,9 @@
 	<script src="countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="../js/main.js"></script>
-    <?php
-        if(isset($_POST['submit'])){
-            $mail = $_POST['mail'];
-            $password = $_POST['pass'];
 
-            $query = "SELECT * FROM users where uid='$mail' and pwd= '$password' ";
 
-            $userData = mysqli_query($con,$query);
-            $totalrow = mysqli_num_rows($userData); // return the count of row
-            if($totalrow == 1){
-                $_SESSION['user_mail']=$mail;
-                header('location: user.php');
-            }else{
-                $msg = "Incorrect Email or password ";
-                echo "<script type='text/javascript'> alert('$msg');</script>";
-            }
-        }
-    ?>
+
 
 </body>
 </html>

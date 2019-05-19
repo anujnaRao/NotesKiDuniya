@@ -39,20 +39,20 @@
                     <h2 class="title">Registration Form</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST">
+                    <form action="register.php" method="POST">
                         <div class="form-row m-b-55">
                             <div class="name">Name</div>
                             <div class="value">
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="first_name">
+                                            <input class="input--style-5" type="text" name="fname">
                                             <label class="label--desc">first name</label>
                                         </div>
                                     </div>
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="last_name">
+                                            <input class="input--style-5" type="text" name="lname">
                                             <label class="label--desc">last name</label>
                                         </div>
                                     </div>
@@ -64,7 +64,7 @@
                             <div class="name">Address</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="address">
+                                    <input class="input--style-5" type="text" name="addr">
                                 </div>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                             <div class="name">Email</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="email" name="email" required>
+                                    <input class="input--style-5" type="email" name="uid" required>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +110,7 @@
                         </div>
 
                         <div>
-                            <a href="Login_v15/vendor/login.php"><button class="btn btn--radius-2 btn--red" type="submit">Register</button></a>
+                            <button class="btn btn--radius-2 btn--red" type="submit" name="submit">Register</button></a>
                         </div>
                     </form>
                 </div>
@@ -128,7 +128,45 @@
     <!-- Main JS-->
     <script src="js/global.js"></script>
 
-</body>
+<!--php code -->
+    <?php
+        if(isset($_POST['submit'])) {
+            $userid = $_POST['uid'];
+            $fname = $_POST['fname'];
+            $lname = $_POST['lname'];
+            $phone= $_POST['phone'];
+            $addr = $_POST['addr'];
+            $pass = $_POST['pwd'];
+            $conpass = $_POST['cpwd'];
 
+
+            $query = "INSERT INTO users(uid, fname, lname, address,phone, pwd)
+                values('$userid','$fname','$lname','$addr',$phone,'$pass')";
+
+
+            $queryCheckId = mysqli_query($con, "select uid from users where uid = '$userid' ");
+
+            if (mysqli_num_rows($queryCheckId) >= 1) {
+                $msg = "$userid is already existed, Try for new user id";
+                echo "<script type='text/javascript'> alert('$msg');</script>";
+            } elseif ($pass == $conpass) {
+
+                $data = mysqli_query($con, $query);
+                echo '<script language="javascript">';
+                echo "alert('$fname is successfully registered')";
+                echo '</script>';
+            } else {
+                $msg = "Password not match";
+                echo "<script type='text/javascript'> alert('$msg');</script>";
+            }
+
+
+        }
+
+
+
+    ?>
+
+</body>
 </html>
 <!-- end document-->
