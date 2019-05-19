@@ -35,7 +35,20 @@
                     </a>
                 </li>
                 <li class="nav-item  active">
-                    <a class="nav-link" href="#">Username</a>
+                    <a class="nav-link" href="user.php">
+                        <?php
+                            $userName = $_SESSION['user_mail'];
+                            if ($userName == true){
+
+                            }else{
+                                header('location: login.php');
+                            }
+                            $query = "SELECT * FROM users where uid='$userName' ";
+                            $userData = mysqli_query($con,$query);
+                            $result = mysqli_fetch_assoc($userData);  // result in the form of array
+                            echo $result['fname']; // fetching the first name
+                        ?>
+                    </a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="upload.php">Upload</a>
@@ -53,7 +66,11 @@
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="card-body">
-                    <h4 class="card-title text-center">User name</h4>
+                    <h4 class="card-title text-center">
+                        <?php
+                            echo "<u>"."Welcome: ".$result['fname']. " ".$result['lname']."</u>";
+                        ?>
+                    </h4>
                 </div>
                 </div>
         </div>
