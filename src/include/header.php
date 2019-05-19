@@ -14,7 +14,11 @@
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
+<<<<<<< HEAD
                         <li><a href="../../home/regform/Login_v15/vendor/index.html">Login</a></li>
+=======
+                        <li><a href="../home/regform/Login_v15/vendor/index.html">Login</a></li>
+>>>>>>> 441f4322b35df1de723cbf09f546ade44ead7a59
                     </ul>
                 </nav>
             </div>
