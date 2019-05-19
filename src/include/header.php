@@ -12,6 +12,7 @@
 
                     <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                         <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="#" >View</li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
 
