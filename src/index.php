@@ -34,7 +34,7 @@
                         <p></p>
                         <p></p>
                         <p></p>
-                        <div><a href="../index.html" class="btn btn-primary btn-md">SignUp!</a></div>
+                        <div><a href="../home/regform/index.html" class="btn btn-primary btn-md">SignUp!</a></div>
                     </div>
                 </div>
 
@@ -43,7 +43,6 @@
     </div>
 
 </div>
-
 
 <?php
     include("include/footer.php");
