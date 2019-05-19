@@ -1047,48 +1047,42 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="247" name="size">
+    <column id="264" parent="247" name="pdfstored">
       <Position>3</Position>
       <DataType>longblob|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="247" name="pdfstored">
-      <Position>4</Position>
-      <DataType>blob|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="266" parent="247" name="PRIMARY">
+    <key id="265" parent="247" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>nid</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="267" parent="248" name="uid">
+    <column id="266" parent="248" name="uid">
       <Position>1</Position>
       <DataType>varchar(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="248" name="nid">
+    <column id="267" parent="248" name="nid">
       <Position>2</Position>
       <DataType>int(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="269" parent="248" name="rating">
+    <column id="268" parent="248" name="rating">
       <Position>3</Position>
       <DataType>float|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="270" parent="248" name="fk_uid_rates">
+    <index id="269" parent="248" name="fk_uid_rates">
       <ColNames>uid</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="271" parent="248" name="fk_nid_rates">
+    <index id="270" parent="248" name="fk_nid_rates">
       <ColNames>nid</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="272" parent="248" name="fk_uid_rates">
+    <foreign-key id="271" parent="248" name="fk_uid_rates">
       <ColNames>uid</ColNames>
       <RefSchemaName>ecom</RefSchemaName>
       <RefTableName>users</RefTableName>
@@ -1096,7 +1090,7 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="273" parent="248" name="fk_nid_rates">
+    <foreign-key id="272" parent="248" name="fk_nid_rates">
       <ColNames>nid</ColNames>
       <RefSchemaName>ecom</RefSchemaName>
       <RefTableName>notes</RefTableName>
@@ -1104,25 +1098,25 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="274" parent="249" name="uid">
+    <column id="273" parent="249" name="uid">
       <Position>1</Position>
-      <DataType>varchar(5)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="275" parent="249" name="nid">
+    <column id="274" parent="249" name="nid">
       <Position>2</Position>
       <DataType>int(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="276" parent="249" name="fk_uid_uploads">
+    <index id="275" parent="249" name="fk_uid_uploads">
       <ColNames>uid</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="277" parent="249" name="fk_nid_uploads">
+    <index id="276" parent="249" name="fk_nid_uploads">
       <ColNames>nid</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="278" parent="249" name="fk_uid_uploads">
+    <foreign-key id="277" parent="249" name="fk_uid_uploads">
       <ColNames>uid</ColNames>
       <RefSchemaName>ecom</RefSchemaName>
       <RefTableName>users</RefTableName>
@@ -1130,7 +1124,7 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="279" parent="249" name="fk_nid_uploads">
+    <foreign-key id="278" parent="249" name="fk_nid_uploads">
       <ColNames>nid</ColNames>
       <RefSchemaName>ecom</RefSchemaName>
       <RefTableName>notes</RefTableName>
@@ -1138,75 +1132,75 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="280" parent="250" name="uid">
+    <column id="279" parent="250" name="uid">
       <Position>1</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="250" name="fname">
+    <column id="280" parent="250" name="fname">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="250" name="lname">
+    <column id="281" parent="250" name="lname">
       <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="250" name="address">
+    <column id="282" parent="250" name="address">
       <Position>4</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="250" name="phone">
+    <column id="283" parent="250" name="phone">
       <Position>5</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="250" name="pwd">
+    <column id="284" parent="250" name="pwd">
       <Position>6</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="286" parent="250" name="PRIMARY">
+    <key id="285" parent="250" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>uid</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="287" parent="251" name="admid">
+    <column id="286" parent="251" name="admid">
       <Position>1</Position>
       <DataType>varchar(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="251" name="nid">
+    <column id="287" parent="251" name="nid">
       <Position>2</Position>
       <DataType>int(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="251" name="verified">
+    <column id="288" parent="251" name="verified">
       <Position>3</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="290" parent="251" name="fk_admid_verify">
+    <index id="289" parent="251" name="fk_admid_verify">
       <ColNames>admid</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="291" parent="251" name="fk_nid_verify">
+    <index id="290" parent="251" name="fk_nid_verify">
       <ColNames>nid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="292" parent="251" name="PRIMARY">
+    <key id="291" parent="251" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>verified</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="293" parent="251" name="fk_admid_verify">
+    <foreign-key id="292" parent="251" name="fk_admid_verify">
       <ColNames>admid</ColNames>
       <RefSchemaName>ecom</RefSchemaName>
       <RefTableName>admins</RefTableName>
@@ -1214,7 +1208,7 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="294" parent="251" name="fk_nid_verify">
+    <foreign-key id="293" parent="251" name="fk_nid_verify">
       <ColNames>nid</ColNames>
       <RefSchemaName>ecom</RefSchemaName>
       <RefTableName>notes</RefTableName>

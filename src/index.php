@@ -1,3 +1,7 @@
+<?php
+    include("../src/include/db.php");
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +38,7 @@
                             <a class="nav-link" href="view.php">View</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../home/regform/Login_v15/vendor/index.html">Login</a>
+                            <a class="nav-link" href="../home/regform/Login_v15/vendor/login.php">Login</a>
                         </li>
 
                     </ul>

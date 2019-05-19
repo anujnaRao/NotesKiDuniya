@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost","root","","ecom") or die("error");
+$con = mysqli_connect("localhost","root","","ecom");
 
 echo "connected!";
 ?>

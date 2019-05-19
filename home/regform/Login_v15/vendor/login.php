@@ -1,3 +1,7 @@
+<?php
+    include("../../../../src/include/db.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,10 +42,10 @@
 					</span>
 				</div>
 
-				<form action="../../../../src/user.php" class="login100-form validate-form">
+				<form action="" class="login100-form validate-form" method="post">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Enter username">
+						<input class="input100" type="email" name="mail" placeholder="Enter Email">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -52,7 +56,7 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<a href="../../../../src/user.php"> <button class="login100-form-btn">
+						<button class="login100-form-btn" type="submit" name="submit">
 							Login
 						</button></a>
 					</div>
@@ -77,6 +81,24 @@
 	<script src="countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="../js/main.js"></script>
+    <?php
+        if(isset($_POST['submit'])){
+            $mail = $_POST['mail'];
+            $password = $_POST['pass'];
+
+            $query = "SELECT * FROM users where uid='$mail' and pwd= '$password' ";
+
+            $userData = mysqli_query($con,$query);
+            $totalrow = mysqli_num_rows($userData); // return the count of row
+            if($totalrow == 1){
+                $_SESSION['user_mail']=$mail;
+                header('location: user.php');
+            }else{
+                $msg = "Incorrect Email or password ";
+                echo "<script type='text/javascript'> alert('$msg');</script>";
+            }
+        }
+    ?>
 
 </body>
 </html>
