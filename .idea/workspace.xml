@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2942933e-7015-43f2-a049-38bb8331005c" name="Default Changelist" comment="" />
+    <list default="true" id="2942933e-7015-43f2-a049-38bb8331005c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/include/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/include/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/regform/Login_v15/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/regform/Login_v15/vendor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/regform/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/regform/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stated/js/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/stated/js/slick.min.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -48,33 +63,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/homepage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="42" lean-forward="true" selection-end-line="71" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/regform/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="555">
               <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/regform/Login_v15/vendor/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/include/header.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/include/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="309">
               <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+=======
+            <state relative-caret-position="60">
+              <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+>>>>>>> 9a7d085d97eda8b5ef625d7123fd6c0e2a1e1ca2
               <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#130#136#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,7 +136,9 @@
         <option value="$PROJECT_DIR$/home/Login_v15/css/main.css" />
         <option value="$PROJECT_DIR$/home/homepage.html" />
         <option value="$PROJECT_DIR$/home/regform/index.html" />
+        <option value="$PROJECT_DIR$/src/include/headrer.php" />
         <option value="$PROJECT_DIR$/src/index.php" />
+        <option value="$PROJECT_DIR$/src/include/footer.php" />
       </list>
     </option>
   </component>
@@ -122,7 +151,9 @@
     <option name="width" value="1750" />
     <option name="height" value="990" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -156,9 +187,19 @@
             <path>
               <item name="NotesKiDuniya" type="b2602c69:ProjectViewProjectNode" />
               <item name="NotesKiDuniya" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="regform" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NotesKiDuniya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NotesKiDuniya" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 9a7d085d97eda8b5ef625d7123fd6c0e2a1e1ca2
             </path>
           </expand>
           <select />
@@ -184,6 +225,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/home/regform/Login_v15/vendor" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="C:\xampp\htdocs\NotesKiDuniya" />
       <recent name="C:\xampp\htdocs\NotesKiDuniya\home\regform\css" />
     </key>
@@ -214,17 +257,30 @@
       <workItem from="1557848203074" duration="831000" />
       <workItem from="1557853627051" duration="4404000" />
       <workItem from="1558168476598" duration="6326000" />
+<<<<<<< HEAD
       <workItem from="1558243523510" duration="2322000" />
+=======
+      <workItem from="1558243523510" duration="1208000" />
+      <workItem from="1558244985452" duration="825000" />
+>>>>>>> 9a7d085d97eda8b5ef625d7123fd6c0e2a1e1ca2
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="13997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="846" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="13708000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
+>>>>>>> 9a7d085d97eda8b5ef625d7123fd6c0e2a1e1ca2
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23825504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18051359" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -243,7 +299,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32930514" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,29 +379,72 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7254a663-7a57-4602-9b22-715938a021b6/console.sql" />
     <entry file="file://$PROJECT_DIR$/home/Login_v15/css/main.css" />
     <entry file="file://$PROJECT_DIR$/home/Login_v15/index.html" />
+    <entry file="uml://DATABASE/7254a663-7a57-4602-9b22-715938a021b6.SCHEMA:ecom">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>7254a663-7a57-4602-9b22-715938a021b6.SCHEMA:ecom</OriginalElement>
+          <nodes>
+            <node x="" y="">7254a663-7a57-4602-9b22-715938a021b6.TABLE:ecom.uploads</node>
+            <node x="" y="">7254a663-7a57-4602-9b22-715938a021b6.TABLE:ecom.notes</node>
+            <node x="" y="">7254a663-7a57-4602-9b22-715938a021b6.TABLE:ecom.users</node>
+            <node x="" y="">7254a663-7a57-4602-9b22-715938a021b6.TABLE:ecom.admins</node>
+            <node x="" y="">7254a663-7a57-4602-9b22-715938a021b6.TABLE:ecom.downloads</node>
+            <node x="" y="">7254a663-7a57-4602-9b22-715938a021b6.TABLE:ecom.verify</node>
+            <node x="" y="">7254a663-7a57-4602-9b22-715938a021b6.TABLE:ecom.rates</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="236.5" y="222.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/home/regform/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="555">
           <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="42" lean-forward="true" selection-end-line="71" selection-end-column="7" />
+        <state relative-caret-position="145">
+          <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
           <folding>
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/header.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/regform/Login_v15/vendor/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="309">
           <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+=======
+        <state relative-caret-position="469">
+          <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+>>>>>>> 9a7d085d97eda8b5ef625d7123fd6c0e2a1e1ca2
           <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#130#136#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
