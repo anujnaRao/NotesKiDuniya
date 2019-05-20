@@ -23,7 +23,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light static-top container-fluid">
     <div class="container">
         <a class="navbar-brand logo" href="index.html">
-            <img src="ll.png" class="img-fluid " alt="">
+            <img src="nkd.png" class="img-fluid " alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -78,11 +78,11 @@
                             if($resultShow -> num_rows>0){
                                 echo "<table class='table table-responsive-md table-bordered'><tr><th>Subject</th><th>Download from here</th></tr>";
                                 while ($row = $resultShow->fetch_assoc()){
-                                    echo "<tr><td>".$row['nname']."</td>";
-                                    echo "<td class='te'><a href='download.php?id='>Download $row[nname]</a>"." </td></tr>";
-                                    echo "</table";
+                                    echo "<tr><td>".$row['nname']."</td><td>";
+                                    echo "<a href=\"download.php?file_id=<?php echo $row[nname] ?>\">Download</a></td>";
+                                    echo " </td></tr>";
                                 }
-
+                                echo "</table";
                             }
 
 
@@ -93,12 +93,39 @@
         </div>
     </div>
 </section>
-
-
-
-
 <?php
     include("include/footer.php");
+?>
+
+<?php
+    if (isset($_GET['file_id'])) {
+        $id = $_GET['file_id'];
+
+        // fetch file to download from database
+        $sql = "SELECT * FROM notes WHERE nname=$id";
+        $result = mysqli_query($con, $sql);
+
+        $file = mysqli_fetch_assoc($result);
+        $filepath = "uploads/" . $file['name'];
+
+        if (file_exists($filepath)) {
+            header('Content-Description: File Transfer');
+            header('Content-Type: application/octet-stream');
+            header('Content-Disposition: attachment; filename=' . basename($filepath));
+            header('Expires: 0');
+            header('Cache-Control: must-revalidate');
+            header('Pragma: public');
+            header('Content-Length: ' . filesize('uploads/' . $file['name']));
+            readfile('uploads/' . $file['name']);
+
+            // Now update downloads count
+//            $newCount = $file['downloads'] + 1;
+//            $updateQuery = "UPDATE files SET downloads=$newCount WHERE id=$id";
+//            mysqli_query($con, $updateQuery);
+            exit;
+        }
+
+    }
 ?>
 </body>
 </html>

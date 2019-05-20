@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 
 <head>
@@ -112,6 +112,12 @@
                         <div>
                             <button class="btn btn--radius-2 btn--red" type="submit" name="submit">Register</button></a>
                         </div>
+                        <div>
+<!--                            <hr>-->
+<!--                            <hr><br>-->
+<!--                            <br>-->
+<!--                          <a href="Login_v15/vendor/login.php">  <input type="text" class="card"  name="login">Login</input></a>-->
+<!--                        </div>-->
                     </form>
                 </div>
             </div>
