@@ -58,7 +58,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light static-top container-fluid">
     <div class="container">
         <a class="navbar-brand logo" href="index.html">
-            <img src="ll.png" class="img-fluid " alt="">
+            <img src="nkd.png" class="img-fluid " alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

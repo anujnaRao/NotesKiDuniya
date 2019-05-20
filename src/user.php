@@ -23,7 +23,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light static-top container-fluid">
     <div class="container">
         <a class="navbar-brand logo" href="index.html">
-            <img src="ll.png" class="img-fluid " alt="">
+            <img src="nkd.png" class="img-fluid " alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -82,66 +82,94 @@
 </section>
 <section>
     <div class="container-fluid">
-    <div class="col">
-            <div class="col-md-12 col-lg-12 text-justify">
-                <div class="card card-signin my-5">
-                <div class="card-body">
-                    <h4 class="card-title text-center">View Notes</h4>
-                    <div class="row">
-                    <div class="col-md-4 col-lg-4">
-                        <div class="card-body">
-                            <h4 class="card-title text-left">Java Notes</h4>
-                        <br><button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >Download Pdf</button>
-                        &emsp;<button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >View Pdf</button>
-                    </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4">
-                        <div class="card-body">
-                            <h4 class="card-title text-left">Python Notes</h4>
-                        <br><button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >Download Pdf</button>
-                        &emsp;<button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >View Pdf</button>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered table-responsive">
+                    <?php
+                        $queryShow = "select * from users where uid='$userName'";
+                        $resultShow = mysqli_query($con,$queryShow);
+                        if($resultShow -> num_rows>0){
+                            echo "<table class='table table-responsive-md table-bordered'><tr><th>Fname</th><th>Lname</th><th>address</th><th>Phone</th></tr>";
+                            while ($row = $resultShow->fetch_assoc()){
+                                echo "<tr><td>".$row['fname']."</td><td>".$row['lname']."</td><td>".$row['address']."</td><td>".$row['phone']."</td>";
+                                echo "</td>";
+                                echo " </td></tr>";
+                            }
+                            echo "</table";
+                        }
 
-                    <div class="col-md-4 col-lg-4">
-                        <div class="card-body">
-                            <h4 class="card-title text-left">Javascript Notes</h4>
-                            <br><button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >Download Pdf</button>
-                            &emsp;<button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >View Pdf</button>
-                        </div>
-                    </div>
-                    </div><hr>
-                    <div class="row">
-                        <div class="col-md-4 col-lg-4">
-                            <div class="card-body">
-                                <h4 class="card-title text-left">Java Notes</h4>
-                                <br><button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >Download Pdf</button>
-                                &emsp;<button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >View Pdf</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="card-body">
-                                <h4 class="card-title text-left">Python Notes</h4>
-                                <br><button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >Download Pdf</button>
-                                &emsp;<button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >View Pdf</button>
-                            </div>
-                        </div>
 
-                        <div class="col-md-4 col-lg-4">
-                            <div class="card-body">
-                                <h4 class="card-title text-left">Javascript Notes</h4>
-                                <br><button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >Download Pdf</button>
-                                &emsp;<button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >View Pdf</button>
-                            </div>
-                        </div>
-                    </div><hr>
-
+                    ?>
+                </table>
             </div>
-            </div>
-            </div>
-    </div>
+        </div>
     </div>
 </section>
+
+
+
+<!--<section>-->
+<!--    <div class="container-fluid">-->
+<!--    <div class="col">-->
+<!--            <div class="col-md-12 col-lg-12 text-justify">-->
+<!--                <div class="card card-signin my-5">-->
+<!--                <div class="card-body">-->
+<!--                    <h4 class="card-title text-center">View Notes</h4>-->
+<!--                    <div class="row">-->
+<!--                    <div class="col-md-4 col-lg-4">-->
+<!--                        <div class="card-body">-->
+<!--                            <h4 class="card-title text-left">Java Notes</h4>-->
+<!--                        <br><button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >Download Pdf</button>-->
+<!--                        &emsp;<button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >View Pdf</button>-->
+<!--                    </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4 col-lg-4">-->
+<!--                        <div class="card-body">-->
+<!--                            <h4 class="card-title text-left">Python Notes</h4>-->
+<!--                        <br><button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >Download Pdf</button>-->
+<!--                        &emsp;<button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >View Pdf</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                    <div class="col-md-4 col-lg-4">-->
+<!--                        <div class="card-body">-->
+<!--                            <h4 class="card-title text-left">Javascript Notes</h4>-->
+<!--                            <br><button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >Download Pdf</button>-->
+<!--                            &emsp;<button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >View Pdf</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    </div><hr>-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-md-4 col-lg-4">-->
+<!--                            <div class="card-body">-->
+<!--                                <h4 class="card-title text-left">Java Notes</h4>-->
+<!--                                <br><button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >Download Pdf</button>-->
+<!--                                &emsp;<button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >View Pdf</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4 col-lg-4">-->
+<!--                            <div class="card-body">-->
+<!--                                <h4 class="card-title text-left">Python Notes</h4>-->
+<!--                                <br><button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >Download Pdf</button>-->
+<!--                                &emsp;<button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >View Pdf</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!---->
+<!--                        <div class="col-md-4 col-lg-4">-->
+<!--                            <div class="card-body">-->
+<!--                                <h4 class="card-title text-left">Javascript Notes</h4>-->
+<!--                                <br><button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >Download Pdf</button>-->
+<!--                                &emsp;<button type="submit" name="submit" class="btn btn-sm btn-primary btn-group-sm text-uppercase"  >View Pdf</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div><hr>-->
+<!---->
+<!--            </div>-->
+<!--            </div>-->
+<!--            </div>-->
+<!--    </div>-->
+<!--    </div>-->
+<!--</section>-->
 <!-- /.row -->
 <!-- /.container -->
 
