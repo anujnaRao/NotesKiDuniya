@@ -1,19 +1,38 @@
 <?php
     session_start();
     include("./include/db.php");
+//
+//    if(isset($_POST['submit'])){
+//        $doc_name = $_POST['doc_name'];
+//        $file_name = $_FILES['file']['name'];
+//        $file_type = $_FILES['file']['type'];
+//        $file_size = $_FILES['file']['size'];
+//        $tmp_loc = $_FILES['file']['tmp_name'];
+//
+//        $file_store = '../uploads/';
+//        move_uploaded_file($tmp_loc,$file_store.$file_name);
+//
+//
+//    }
 
-    if(isset($_POST['submit'])){
-        $doc_name = $_POST['doc_name'];
-        $file_name = $_FILES['myfile']['name'];
-        $file_type = $_FILES['myfile']['type'];
-        $file_size = $_FILES['myfile']['size'];
-        $file_tmp_loc = $_FILES['myfile']['tmp_name'];
 
-        $file_store ="/home/aditya/Desktop/".$file_name;
-        move_uploaded_file($file_tmp_loc,$file_store);
-
-
+    $target_dir = "uploads/";
+    $target_file = $target_dir . basename($_FILES['file']["name"]);
+    $uploadOk = 1;
+    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+    // Check if image file is a actual image or fake image
+    if (isset($_POST["submit"])) {
+        $check = getimagesize($_FILES['file']["tmp_name"]);
+        if ($check !== false) {
+            echo "File is an image - " . $check["mime"] . ".";
+            $uploadOk = 1;
+        } else {
+            echo "File is not an image.";
+            $uploadOk = 0;
+        }
     }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -82,10 +101,10 @@
                 <div class="card-body">
                     <h5 class="card-title text-center"><u>Notes Ki Duniya</h5></u>
                     <h3 class="login-heading mb-4">Upload File</h3>
-                    <form action="" method="post" class="form-control" enctype="multipart/form-data">
+                    <form action="?" method="post" class="form-control" enctype="multipart/form-data">
                         <div class="form-label-group">
-                        <input type="text" id="subname" name="subname" class="form-control" placeholder="Subject Name" required autofocus>
-                        <!--                        <label for="subname">Subject Name</label>-->
+                        <input type="text" id="doc_name" name="doc_name" class="form-control" placeholder="Subject Name" required autofocus>
+                        <label for="doc_name"></label>
                     </div>
                     <hr>
                     <div class="input-group">
@@ -94,7 +113,7 @@
                         </div>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                   aria-describedby="inputGroupFile">
+                                   aria-describedby="inputGroupFile" name="file">
                             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                         </div>
                     </div><hr>
