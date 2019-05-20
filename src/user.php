@@ -1,6 +1,7 @@
 <?php
     session_start();
     include("./include/db.php");
+//    include("../home/regform/Login_v15/vendor/login.php");
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +42,7 @@
                             if ($userName == true){
 
                             }else{
-                                header('location: login.php');
+                                header('location: ../home/regform/Login_v15/vendor/login.php');
                             }
                             $query = "SELECT * FROM users where uid='$userName' ";
                             $userData = mysqli_query($con,$query);
@@ -52,6 +53,9 @@
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="upload.php">Upload</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="download.php">Downloads</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="logout.php">Logout</a>

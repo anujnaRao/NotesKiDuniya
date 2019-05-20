@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    include("./include/db.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,15 +111,36 @@
         </div>
     </div>
 </section>
-<!-- /.row -->
-<!-- /.container -->
+<section>
+    <div class="container-fluid">
+        <div class="col">
+            <div class="col-md-12 col-lg-12 text-justify">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Recently uploaded notes.We filter the best notes for you.</h4>
+                        <?php
+                            $queryShow = "select * from notes";
+                            $resultShow = mysqli_query($con,$queryShow);
+                            if($resultShow -> num_rows>0){
+                                echo "<table class='table table-responsive-md table-bordered'><tr><th>Subject</th></tr>";
+                                while ($row = $resultShow->fetch_assoc()){
+
+                                    echo "<tr><td>". $row['nname']."</td></tr>";
+                                }
+                                echo "</table";
+                            }
+
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
-</div>
-<!-- /.row -->
 
-</div>
 <?php
     include("include/footer.php");
 ?>

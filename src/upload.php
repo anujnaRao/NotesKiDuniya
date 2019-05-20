@@ -16,21 +16,24 @@
 //    }
 
 
-    $target_dir = "uploads/";
-    $target_file = $target_dir . basename($_FILES['file']["name"]);
-    $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-    // Check if image file is a actual image or fake image
-    if (isset($_POST["submit"])) {
-        $check = getimagesize($_FILES['file']["tmp_name"]);
-        if ($check !== false) {
-            echo "File is an image - " . $check["mime"] . ".";
-            $uploadOk = 1;
-        } else {
-            echo "File is not an image.";
-            $uploadOk = 0;
-        }
-    }
+//    $target_dir = "uploads/";
+//    $target_file = $target_dir . basename($_FILES['file']["name"]);
+//    $uploadOk = 1;
+//    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+//    // Check if image file is a actual image or fake image
+//    if (isset($_POST["submit"])) {
+//        $check = getimagesize($_FILES['file']["tmp_name"]);
+//        if ($check !== false) {
+//            echo "File is an image - " . $check["mime"] . ".";
+//            $uploadOk = 1;
+//        } else {
+//            echo "File is not an image.";
+//            $uploadOk = 0;
+//        }
+//    }
+
+//    $doc_name = $_POST['doc_name'];
+
 
 
 ?>
@@ -86,6 +89,9 @@
                 <li class="nav-item active ">
                     <a class="nav-link" href="upload.php">Upload</a>
                 </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="download.php">Downloads</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="logout.php">Logout</a>
                 </li>
@@ -101,7 +107,7 @@
                 <div class="card-body">
                     <h5 class="card-title text-center"><u>Notes Ki Duniya</h5></u>
                     <h3 class="login-heading mb-4">Upload File</h3>
-                    <form action="?" method="post" class="form-control" enctype="multipart/form-data">
+                    <form action="?" method="post" class="form-control" enctype="multipart/form-data"><br>
                         <div class="form-label-group">
                         <input type="text" id="doc_name" name="doc_name" class="form-control" placeholder="Subject Name" required autofocus>
                         <label for="doc_name"></label>
@@ -112,9 +118,9 @@
                             <span class="input-group-text" id="inputGroupFile">Upload</span>
                         </div>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                   aria-describedby="inputGroupFile" name="file">
-                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                            <input type="file" class="custom-file-input" id="file"
+                                   aria-describedby="file" name="file">
+                            <label class="custom-file-label" for="file">Choose file</label>
                         </div>
                     </div><hr>
                     <button type="submit" name="submit" class="btn btn-md btn-primary btn-block text-uppercase"  >Upload</button>
@@ -124,7 +130,40 @@
         </div>
     </div>
 </div>
+<?php
 
+
+    if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
+        $targetDir = "uploads/";
+        $fileName = basename($_FILES["file"]["name"]);
+        $targetFilePath = $targetDir . $fileName;
+        $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+        $doc_name = $_POST['doc_name'];
+        // Allow certain file formats
+        $allowTypes = array('jpg','png','jpeg','pdf');
+        if(in_array($fileType, $allowTypes)){
+            // Upload file to server
+            if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
+                // Insert image file name into database
+                $insert = $con->query("INSERT into notes (nname,path) VALUES ('$doc_name','$targetFilePath')");
+                if($insert){
+                    $statusMsg = "The file ".$fileName. " has been uploaded successfully.";
+                }else{
+                    $statusMsg = "File upload failed, please try again.";
+                }
+            }else{
+                $statusMsg = "Sorry, there was an error uploading your file.";
+            }
+        }else{
+            $statusMsg = 'Sorry, only JPG, JPEG, PNG, GIF, & PDF files are allowed to upload.';
+        }
+    }else{
+        $statusMsg = '';
+    }
+
+    // Display status message
+    echo $statusMsg;
+?>
 
 
 <script>
