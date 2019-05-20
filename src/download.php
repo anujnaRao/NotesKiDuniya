@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/stated/css/style.css">
     <script src="./jquery-3.4.0.slim.min.js"></script>
     <script src="./bootstrap.js"></script>
     <script src="./popper.min.js"></script>
@@ -22,7 +22,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light static-top container-fluid">
     <div class="container">
-        <a class="navbar-brand logo" href="index.html">
+        <a class="navbar-brand logo" href="../src/index.php">
             <img src="nkd.png" class="img-fluid " alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,8 +57,8 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="download.php">Downloads</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.php">Contact</a>
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact</a>-->
                 </li>
             </ul>
         </div>
@@ -71,7 +71,7 @@
             <div class="col-md-12 col-lg-12 text-justify">
                 <div class="card card-signin my-5">
                     <div class="card-body">
-                        <h4 class="card-title text-center">Recently uploaded notes.We filter the best notes for you.</h4>
+                        <h4 class="card-title text-center">Recently uploaded notes.We filter the best notes for you!!</h4>
                         <?php
                             $queryShow = "select * from notes";
                             $resultShow = mysqli_query($con,$queryShow);
