@@ -79,7 +79,7 @@
                                 echo "<table class='table table-responsive-md table-bordered'><tr><th>Subject</th><th>Download from here</th></tr>";
                                 while ($row = $resultShow->fetch_assoc()){
                                     echo "<tr><td>".$row['nname']."</td><td>";
-                                    echo "<a href=\"download.php?file_id=<?php echo $row[nname] ?>\">Download</a></td>";
+                                    echo "<a href=\"download.php?file_id=<?php echo $row[path] ?>\">Download</a></td>";
                                     echo " </td></tr>";
                                 }
                                 echo "</table";
@@ -102,7 +102,7 @@
         $id = $_GET['file_id'];
 
         // fetch file to download from database
-        $sql = "SELECT * FROM notes WHERE nname=$id";
+        $sql = "SELECT * FROM notes WHERE nname='$id'";
         $result = mysqli_query($con, $sql);
 
         $file = mysqli_fetch_assoc($result);
